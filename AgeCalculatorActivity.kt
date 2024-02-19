@@ -18,7 +18,7 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
-class AgeCalcActivity : AppCompatActivity(), View.OnClickListener {
+class AgeCalculatorActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var chooseTodayDate: AutoCompleteTextView
     private lateinit var chooseDob: AutoCompleteTextView
