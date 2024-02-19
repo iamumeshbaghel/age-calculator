@@ -19,21 +19,15 @@ import java.util.Calendar
 import java.util.Locale
 
 class AgeCalcActivity : AppCompatActivity(), View.OnClickListener {
-    private lateinit var dateOfBirthEditText: EditText
-    private lateinit var monthOfBirthEditText: EditText
-    private lateinit var yearOfBirthEditText: EditText
-    private lateinit var currentDateEditText: EditText
+
     private lateinit var chooseTodayDate: AutoCompleteTextView
     private lateinit var chooseDob: AutoCompleteTextView
-    private lateinit var currentMonthEditText: EditText
-    private lateinit var currentYearEditText: EditText
     private lateinit var calculateAgeTextView: TextView
     private lateinit var calculateMonthTextView: TextView
     private lateinit var calculateDayTextView: TextView
     private lateinit var calculateButtonRelativeLayout: RelativeLayout
     private lateinit var binding: ActivityAgeCalcBinding
-    private lateinit var downloadManager: DownloadManager
-    private lateinit var downloadCompleteReceiver: BroadcastReceiver
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAgeCalcBinding.inflate(layoutInflater)
